@@ -1,0 +1,211 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  color: beige;
+  background-color: #333;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.info-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.info-cards .card {
+  position: relative;
+  margin: 10px;
+  height: 60vh;
+  width: 100%;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+.info-cards .card .img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  transition: 1s;
+}
+.info-cards .card .two {
+  background-image: url("../img/man-1690965_1280.jpg");
+}
+.info-cards .card .one {
+  background-image: url("../img/portrait-657116_1280.jpg");
+}
+.info-cards .card .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0 20px;
+  opacity: 0;
+  transition: 1s;
+  background-image: linear-gradient(360deg, rgb(100, 0, 160), rgb(100, 0, 160));
+}
+.info-cards .card h3 {
+  margin-bottom: 20px;
+}
+.info-cards .card .text-one {
+  transform: rotateX(-180deg);
+}
+.info-cards .card .text-two {
+  transform: rotateY(-180deg);
+}
+.info-cards .card:hover .text {
+  transform: rotate(0);
+  opacity: 1;
+}
+.info-cards .card:hover .one {
+  transform: rotateX(180deg);
+  opacity: 0;
+}
+.info-cards .card:hover .two {
+  transform: rotateY(-180deg);
+  opacity: 0;
+}
+
+.business-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.business-cards .card {
+  position: relative;
+  margin: 10px;
+  height: 60vh;
+  width: 50%;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px 0 25px 0;
+  box-shadow: 10px 10px;
+  overflow: hidden;
+}
+.business-cards .card button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  color: white;
+  font-size: 2rem;
+}
+.business-cards .card button:hover ~ .text {
+  translate: 0% 0%;
+}
+.business-cards .card .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  padding: 60px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  translate: 0% 100%;
+  transition: translate 0.5s;
+  text-wrap: pretty;
+}
+.business-cards .card .text h1,
+.business-cards .card .text h3 {
+  color: white;
+  text-shadow: 0 0 5px rgb(200, 120, 255), 0 0 10px rgb(200, 120, 255), 0 0 15px rgb(200, 120, 255), 0 0 25px rgb(200, 120, 255), 0 0 35px rgb(200, 120, 255), 0 0 50px rgb(200, 120, 255), 0 0 70px rgb(200, 120, 255);
+}
+.business-cards .card .text h3 {
+  margin-bottom: 20px;
+}
+.business-cards .one {
+  background-image: url("../img/man-1690965_1280.jpg");
+}
+.business-cards .two {
+  background-image: url("../img/portrait-657116_1280.jpg");
+}/*# sourceMappingURL=style.css.map */

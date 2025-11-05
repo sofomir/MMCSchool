@@ -1,0 +1,81 @@
+@use './colors' as colors;
+@import './reset';
+// or better @use './reset' as *;
+
+@mixin border($size) {
+	border: $size solid rgba(0, 0, 0, 0.5);
+}
+
+$red: red;
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* we create classes in style.scss like this */
+$colors: (
+	top:lime,
+	middle:gold,
+	bottom:white,
+);
+
+$main-color-even: lime;
+$main-color-odd: yellow;
+$square-height: 100px;
+$square-width: 100px;
+$spuare-bgc-color-red: red;
+$spuare-bgc-color-pink: pink;
+
+body {
+	background-color: #3c00ff;
+}
+
+div.even {
+	margin: 10px auto;
+	height: 20px;
+	width: 100px;
+	background-color: $main-color-even;
+}
+
+div.odd {
+	margin: 10px auto;
+	height: 20px;
+	width: 100px;
+	background-color: $main-color-odd;
+}
+
+div.pink {
+    margin: 10px auto;
+	height: $square-height;
+	width: $square-width;
+	background-color: $spuare-bgc-color-pink;
+}
+
+div.red {
+    margin: 10px auto;
+	height: $square-height;
+	width: $square-width;
+	background-color: colors.$red;
+}
+
+.rectangle{
+	margin: 10px auto;
+	height: 50px;
+	width: 200px;
+	background-color: lightblue;
+}
+
+.item1 {
+	background-color: map-get($colors, top);
+}
+
+.item2 {
+	background-color: map-get($colors, middle);
+}
+
+.item3 {
+	background-color: map-get($colors, bottom);
+	@include border(10px)
+}

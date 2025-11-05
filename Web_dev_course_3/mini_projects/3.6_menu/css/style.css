@@ -1,0 +1,168 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  color: beige;
+  background-color: #333;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+body {
+  height: 100vh;
+  font-family: "Reddit", sans-serif;
+  overflow: hidden;
+  color: #fff;
+  background: linear-gradient(10deg, #2483ff 60%, #2c6afb 60%);
+}
+
+nav {
+  margin-top: 100px;
+  background-color: #292929;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  font-size: 24px;
+}
+
+.menu-item {
+  display: inline-block;
+  height: 100%;
+  width: 300px;
+  line-height: 100px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.menu-item:hover {
+  background-color: #333;
+}
+
+.dropdown {
+  position: absolute;
+  width: 300px;
+}
+
+.dropdown li {
+  display: none;
+  opacity: 0;
+  background-color: #444;
+  transition: color 0.3s;
+}
+
+.dropdown li:hover {
+  color: red;
+}
+
+.menu-item:hover .dropdown li {
+  display: block;
+  animation: menu1 0.5s forwards;
+}
+
+.menu-item:hover .dropdown li:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.menu-item:hover .dropdown li:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.menu-item:hover .dropdown li:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.menu-item:hover .dropdown li:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.menu-item:hover .dropdown li:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+@keyframes menu1 {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=style.css.map */

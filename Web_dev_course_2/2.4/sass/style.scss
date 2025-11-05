@@ -1,0 +1,70 @@
+@use './reset';
+
+body {
+	margin: 50px;
+	font-size: 20px;
+	color: beige;
+	background-color: #333;
+}
+
+div {
+	margin: 50px;
+}
+
+p:last-child {
+	color: darkkhaki;
+}
+
+p:first-of-type {
+	color: brown;
+}
+
+p:first-child {
+	color: aquamarine;
+}
+
+table {
+	height: 200px;
+	width: 100%;
+	border: 1px solid beige;
+}
+thead {
+	height: 50px;
+	border: 1px solid beige;
+}
+
+tbody {
+	height: 150px;
+	border: 1px solid beige;
+}
+
+tr,
+td {
+	border: 1px solid beige;
+}
+
+td:nth-child(even) {
+	background-color: rgba(0, 255, 255, 0.5);
+}
+
+tr:nth-child(odd) {
+	background-color: rgba(60, 93, 255, 0.5);
+}
+
+.hero-img {
+	position: relative;
+	margin: 20px auto;
+	width: 600px;
+	height: 300px;
+	background-image: url(../img/violin.jpg);
+	background-size: cover;
+	background-position: bottom;
+}
+
+.hero-img::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(136, 25, 25, 0.5);
+}

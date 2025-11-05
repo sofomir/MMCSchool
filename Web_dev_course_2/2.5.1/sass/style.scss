@@ -1,0 +1,70 @@
+@use './reset';
+
+.square {
+    width: 300px;
+    height: 50px;
+    background-color: gold;
+    animation: color 5s ease-in-out 4s;
+    // like transition
+}
+
+.twoOne {
+    // animation-direction: reverse;
+    animation-fill-mode: forwards;
+}
+
+.twoTwo {
+    animation-direction: reverse;
+    animation-fill-mode: forwards;
+}
+
+.threeOne {
+    // animation-direction: alternate;
+    animation-fill-mode: backwards;
+}
+
+.threeTwo {
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+}
+
+.fourOne {
+    // animation-direction: alternate-reverse;
+    animation-fill-mode: both;
+}
+
+.fourTwo {
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
+}
+
+@keyframes color {
+    0% {
+        width: 400px;
+        background-color: greenyellow;
+    }
+
+    25% {
+        width: 600px;
+        background-color: aquamarine;
+    }
+
+    50% {
+        width: 800px;
+        background-color: royalblue;
+    }
+
+    75% {
+        width: 200px;
+        background-color: aquamarine;
+    }
+
+    100% {
+        width: 200px;
+        background-color: goldenrod;
+    }
+}
+
+.square:hover {
+    animation-play-state: paused;
+}

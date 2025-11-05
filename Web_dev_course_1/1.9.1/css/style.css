@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    /* 'border-box' means that if we add margin/padding box keeps dimansions
+    'content-box' is default and div is bigger when we add them */
+    margin: 0px;
+    /* margin top + bottom averlap, 50px + 40px = 50px ;) */
+    padding: 0px;
+}
+
+body{
+    /* margin: 50px; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #333;
+    font-size: 36px;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    background-color: white;
+}
+
+.margin{
+    border: 10px dashed gold;
+    border-top-left-radius: 50%;
+}
+
+.content{
+    display: inline-block;
+}
+
+.border{
+    display: inline-block;
+}
+
+.lorem{
+    overflow: visible;
+    /* text is visible out of the box (div) */
+    overflow: hidden;
+    /* to much text is hidden */
+    overflow: auto;
+    /* scroll vertical - only if needed */
+    overflow: scroll;
+    /* scroll horizontal and vertical */
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link{
+    color: aqua;
+}
+
+a:visited{
+    color: blueviolet;
+}
+
+a:hover{
+    color: lightpink;
+}
+
+a:active{
+    color: blue;
+}
+
+.btn{
+    padding: 5px 10px;
+    background-color: greenyellow;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    /* outline: invert; */
+}
+
+.btn:hover{
+    background-color: gold;
+    box-shadow: 0px 0px 5px gold;
+    transition: 300ms;
+}
